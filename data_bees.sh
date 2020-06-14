@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 # 
 # ---------------------------------------------------------------- #
 # Script Name:   data_bees.sh 
-# Description:   Install all python data science packages for Smarbee algorithms
-# Github:        https://www.github.com/BelipeFarros
-# Written by:    Felipe Barros
-# Maintenance:   Felipe Barros
+# Description:   Install all python data science packages for Smarbee algorithms: tensorFlow, numpy, matplot, pandas, sklearn
+# Github:        https://www.github.com/BelipeFarros, https://github.com/leo-vitor
+# Written by:    Felipe Barros,Leo Vitor
+# Maintenance:   Felipe Barros,Leo Vitor
 # ---------------------------------------------------------------- #
 # Usage:         
 #       $ ./data_bees.sh
@@ -29,18 +29,18 @@ TIME=0.5
 
 
 # ------------------------- REQUIREMENTS ------------------------- #
-##Instalando pip3##
-#echo "Verificando por atualizações no pip..."
-#echo " "
-#sleep $TIME
-#sudo apt install python3-pip
-#echo " "
+#Instalando pip3 / Install pip3
+echo "Verificando por atualizações no pip..."
+echo " "
+sleep $TIME
+sudo apt install python3-pip
+echo " "
 
-#echo "Verificando por atualizações no virtualenv..."
-#echo " "
-#sleep $TIME
-#sudo pip3 install -U virtualenv
-#echo " "
+echo "Verificando por atualizações no virtualenv..."
+echo " "
+sleep $TIME
+sudo pip3 install -U virtualenv
+echo " "
 
 echo "Criando ambiente virtual..."
 mkdir ./databee
@@ -53,27 +53,32 @@ source ./databee-env/bin/activate
 
 
 # --------------------------- EXECUTION -------------------------- #
-#Instalando tensorflow
+#Instalando tensorflow / Install tensoflow
+sudo apt-get update
 pip install --upgrade tensorflow
 
-#Instalando numpy (OK)
-#pip install numpy
+#Instalando numpy / Install numpy
+sudo apt-get update
+pip install numpy
 
-#Instalando matplot (OK)
-#pip install matplotlib
+#Instalando matplot / Install matplot
+sudo apt-get update
+pip install matplotlib
 
-#Instalando pandas (OK)
-#pip install pandas
+#Instalando pandas / Install pandas
+sudo apt-get update
+pip install pandas
 
-#Instalando sklearn (OK)
-#pip install sklearn
+#Instalando sklearn / Install sklearn
+sudo apt-get update
+pip install sklearn
 
 # ---------------------------------------------------------------- #
 
 
 
 # ---------------------- POST INSTALLATION ----------------------- #
-
+# Removendo pacotes que não são mais requeridos/ Removing unrequired packages
 sudo apt autoremove -y
 
 # ---------------------------------------------------------------- #
