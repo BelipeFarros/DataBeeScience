@@ -13,4 +13,4 @@ The main objective of the project is to develop a shell script that automaticall
 
 ## How to use
 
-Place the [**data_bees.sh**](DataBeeScience) file in the folder where you want to create the virtual environment and run the *./data_bees.sh* command from the terminal.
+Place the **data_bees.sh** file in the folder where you want to create the virtual environment and run the *./data_bees.sh* command from the terminal.
