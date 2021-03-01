@@ -2,7 +2,7 @@
 # 
 # ---------------------------------------------------------------- #
 # Script Name:   data_bees.sh 
-# Description:   Install all python data science packages for Smarbee algorithms: tensorFlow, numpy, matplot, pandas, sklearn
+# Description:   Install all python data science packages for Smartbee algorithms: tensorFlow, numpy, matplot, pandas, sklearn
 # Github:        https://www.github.com/BelipeFarros, https://github.com/leo-vitor
 # Written by:    Felipe Barros,Leo Vitor
 # Maintenance:   Felipe Barros,Leo Vitor
